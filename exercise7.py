@@ -12,7 +12,7 @@ Z = Y**2 - X**2 + 2*X*Y #compute the z values for each (x, y) pair using the for
 
 # Create 3D surface plot
 fig = plt.figure(figsize=(10, 8))
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.add_subplot(1,1,1, projection='3d')
 
 # Plot surface with jet colormap
 surf = ax.plot_surface(X, Y, Z, cmap='jet', linewidth=0, antialiased=True)
